@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.util.Random;
 
 public class ism115ucs155 {
-    private static final String file = "outp";
+    private static final String file = "out/outp1";
 
     public static void main(String[] args) throws Exception {
         Random rand = new Random();
