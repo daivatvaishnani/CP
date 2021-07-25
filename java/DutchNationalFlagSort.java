@@ -10,7 +10,7 @@ public class DutchNationalFlagSort {
 
     public static void sort(int[] arr) {
         int end0s = -1, end1s = -1;
-        for (int i = 0; i < arr.length;) {
+        for (int i = 0; i < arr.length; ) {
             switch (arr[i]) {
                 case 0 -> {
                     end0s++;

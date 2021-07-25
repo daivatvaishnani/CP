@@ -31,7 +31,7 @@ public class QuickSort {
         int pivotIndex = pivotSelector.select(arr, l, r);
         int pivot = arr[pivotIndex];
         swap(arr, pivotIndex, r);
-        int partitionIndex = l-1;
+        int partitionIndex = l - 1;
         for (int i = l; i < r; ++i) {
             if (arr[i] <= pivot) {
                 partitionIndex++;
