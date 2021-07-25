@@ -1,5 +1,3 @@
-package java;
-
 public class test3 {
 
 	static Integer a = 10;
