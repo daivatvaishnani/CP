@@ -1,5 +1,8 @@
+package java;
+
 import java.util.*;
 import java.io.*;
+
 class Solution{
 	static long find_cost(int N, int hcost, int vcost){
 		long res = N*(N-1);
