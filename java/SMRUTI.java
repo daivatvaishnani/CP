@@ -1,11 +1,13 @@
-import java.util.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
 
-class Solution {
-    static long find_cost(int N, int hcost, int vcost) {
-        long res = N * (N - 1);
-        res *= Math.max(hcost, vcost);
-        long temp = (N - 1) * (Math.min(hcost, vcost));
+class SMRUTI {
+    private static long find_cost(int N, int hcost, int vcost) {
+        long res = (long) N * (N - 1);
+        res = res * Math.max(hcost, vcost);
+        long temp = (long) (N - 1) * (Math.min(hcost, vcost));
         return res + temp;
     }
 

@@ -29,7 +29,7 @@ class Robot:
         return "[{0},{1},{2}]".format(self.position.x, self.position.y, self.position.d)
 
 
-class Solution:
+class SMRUTI:
     def isRobotBounded(self, instructions):
         robot = Robot(Coordinate(0, 0, 1))
         # print("starting status: {0}".format(robot.status()))
@@ -51,12 +51,12 @@ class Tester:
             test_status = "Passed!"
             solution_output = None
             try:
-                solution_output = Solution().isRobotBounded(test_input)
+                solution_output = SMRUTI().isRobotBounded(test_input)
                 assert solution_output == expected_output
             except AssertionError:
                 test_status = "Failed!"
             finally:
-                print("Solution: {0}, Expected: {1}".format(
+                print("SMRUTI: {0}, Expected: {1}".format(
                     solution_output, expected_output))
                 print(test_status)
             num += 1
