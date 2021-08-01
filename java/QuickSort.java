@@ -19,27 +19,20 @@ class RandomSelector implements PivotSelector {
 }
 
 public class QuickSort {
-    private static void swap(int[] arr, int i, int j) {
-        if (i == j) return;
-        arr[i] = arr[i] ^ arr[j];
-        arr[j] = arr[i] ^ arr[j];
-        arr[i] = arr[i] ^ arr[j];
-    }
-
     private static int partition(int[] arr, int l, int r, PivotSelector pivotSelector) {
         if (l >= r) return l;
         int pivotIndex = pivotSelector.select(arr, l, r);
         int pivot = arr[pivotIndex];
-        swap(arr, pivotIndex, r);
+        Utils.swap(arr, pivotIndex, r);
         int partitionIndex = l - 1;
         for (int i = l; i < r; ++i) {
             if (arr[i] <= pivot) {
                 partitionIndex++;
-                swap(arr, partitionIndex, i);
+                Utils.swap(arr, partitionIndex, i);
             }
         }
         partitionIndex++;
-        swap(arr, partitionIndex, r);
+        Utils.swap(arr, partitionIndex, r);
         return partitionIndex;
     }
 

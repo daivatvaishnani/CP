@@ -2,11 +2,6 @@ import java.util.Arrays;
 
 public class DutchNationalFlagSort {
     // sort array with 0s, 1s and 2s
-    private static void swap(int[] arr, int i, int j) {
-        arr[i] = arr[i] ^ arr[j];
-        arr[j] = arr[i] ^ arr[j];
-        arr[i] = arr[i] ^ arr[j];
-    }
 
     public static void sort(int[] arr) {
         int end0s = -1, end1s = -1;
@@ -18,7 +13,7 @@ public class DutchNationalFlagSort {
                         i++;
                         continue;
                     }
-                    swap(arr, end0s, i);
+                    Utils.swap(arr, end0s, i);
                 }
                 case 1 -> {
                     if (end1s == -1) {
@@ -29,7 +24,7 @@ public class DutchNationalFlagSort {
                         i++;
                         continue;
                     }
-                    swap(arr, end1s, i);
+                    Utils.swap(arr, end1s, i);
                 }
                 case 2 -> i++;
             }
