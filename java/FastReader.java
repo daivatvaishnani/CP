@@ -3,14 +3,14 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.StringTokenizer;
 
-public class FastReader extends BufferedReader {
+class FastReader extends BufferedReader {
 	StringTokenizer st;
 
-	public FastReader(Reader in, int sz) {
+	FastReader(Reader in, int sz) {
 		super(in, sz);
 	}
 
-	public FastReader(Reader in) {
+	FastReader(Reader in) {
 		super(in);
 	}
 
