@@ -4,7 +4,7 @@ import java.io.IOException;
 public class Sample {
 	public static void main(String[] args) {
 		try (
-			FastReader reader = new FastReader(new FileReader("java/in"))
+			FastReader reader = new FastReader(new FileReader("in"))
 		) {
 			int numTestCases = reader.nextInt();
 			for (int i = 1; i <= numTestCases; ++i) {
