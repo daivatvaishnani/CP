@@ -6,17 +6,17 @@ import java.util.StringTokenizer;
 class FastReader extends BufferedReader {
 	StringTokenizer st;
 
-	FastReader(Reader in, int sz) {
-		super(in, sz);
-	}
-
 	FastReader(Reader in) {
 		super(in);
 	}
 
-	private String next() throws IOException {
+	String nextLine() throws IOException {
+		return readLine();
+	}
+
+	String next() throws IOException {
 		while (st == null || !st.hasMoreElements()) {
-			st = new StringTokenizer(readLine());
+			st = new StringTokenizer(nextLine());
 		}
 		return st.nextToken();
 	}
@@ -31,9 +31,5 @@ class FastReader extends BufferedReader {
 
 	double nextDouble() throws IOException {
 		return Double.parseDouble(next());
-	}
-
-	String nextLine() throws IOException {
-		return readLine();
 	}
 }
