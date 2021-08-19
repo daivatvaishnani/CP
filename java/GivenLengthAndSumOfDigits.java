@@ -33,7 +33,7 @@ public class GivenLengthAndSumOfDigits {
   }
 
   public static void main(String[] args) throws IOException {
-    FastReader fastReader = new FastReader(new InputStreamReader(System.in));
+    FastReader fastReader = new FastReader(System.in);
     int length = fastReader.nextInt();
     int sum = fastReader.nextInt();
     GivenLengthAndSumOfDigitsResult givenLengthAndSumOfDigitsResult = findGivenLengthAndSumOfDigits(length, sum);

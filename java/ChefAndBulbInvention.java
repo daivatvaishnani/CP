@@ -1,4 +1,4 @@
-import java.io.FileReader;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 public class ChefAndBulbInvention {
@@ -24,7 +24,7 @@ public class ChefAndBulbInvention {
   }
 
   public static void main(String[] args) throws IOException {
-    FastReader fastReader = new FastReader(new FileReader("in"));
+    FastReader fastReader = new FastReader(new FileInputStream("in"));
     int cases = fastReader.nextInt();
     while (cases-- > 0) {
       int n = fastReader.nextInt(), p = fastReader.nextInt(), k = fastReader.nextInt();

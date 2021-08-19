@@ -1,3 +1,4 @@
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -27,7 +28,7 @@ public class MochaAndRedBlue {
   }
 
   public static void main(String[] args) throws IOException {
-    FastReader fr = new FastReader(new FileReader("in"));
+    FastReader fr = new FastReader(new FileInputStream("in"));
     int cases = fr.nextInt();
     while (cases-- > 0) {
       int n = fr.nextInt();

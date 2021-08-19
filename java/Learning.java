@@ -1,6 +1,14 @@
-import java.util.Collections;
-import java.util.PriorityQueue;
+interface TopicA {
+  void read();
+}
 
-public class Learning {
-  PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
+interface TopicB {
+  void read();
+}
+
+public class Learning implements TopicA, TopicB {
+  @Override
+  public void read() {
+
+  }
 }

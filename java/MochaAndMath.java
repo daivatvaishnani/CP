@@ -11,7 +11,7 @@ public class MochaAndMath {
   }
 
   public static void main(String[] args) throws IOException {
-    FastReader fr = new FastReader(new InputStreamReader(System.in));
+    FastReader fr = new FastReader(System.in);
     int cases = fr.nextInt();
     while (cases-- > 0) {
       int n = fr.nextInt();

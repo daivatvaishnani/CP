@@ -24,7 +24,7 @@ public class NumberOfWays {
   }
 
   public static void main(String[] args) throws IOException {
-    FastReader fr = new FastReader(new InputStreamReader(System.in));
+    FastReader fr = new FastReader(System.in);
     int n = fr.nextInt();
     long[] arr = new long[n];
     for (int i = 0; i < n; ++i) {

@@ -16,7 +16,7 @@ public class SpecialTriplets {
   }
 
   public static void main(String[] args) throws IOException {
-    FastReader fastReader = new FastReader(new InputStreamReader(System.in));
+    FastReader fastReader = new FastReader(System.in);
     int cases = fastReader.nextInt();
     while (cases-- > 0) {
       int n = fastReader.nextInt();
